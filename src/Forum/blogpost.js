@@ -5,6 +5,7 @@ export default function BlogPost({title, author, datePosted, content}) {
         <p>{author}</p>
         <p>{datePosted}</p>
         <p>{content}</p>
+        
       </div>
     )
   
