@@ -1,7 +1,39 @@
+// import {Link} from "react-router-dom";
+// import React from "react";
+// export default function BlogPost({title, topics}) {
+  
+//     const handleChange = (event) => {
+//       // handle the selected value change here
+//     };
+  
+//     return (
+//       <div className="blogTitle">
+//         <h1>{title}</h1>
+//         <div className="topicsList">
+//           <p>Topics covered this week: </p>
+//           <select onChange={handleChange}>
+//             {topics.map((topic, index) => (
+//               <option key={index} value={topic}>
+//                 {topic}
+//               </option>
+//             ))}
+//           </select>
+//         </div>
+//       </div>
+//     );
+//   };
 
-export default function BlogPost({title, topics}) {
+  //               <Link to={`/forums/${topic.id}/${topic.index}`}>
+
+  import { Link, useNavigate } from "react-router-dom";
+  import React from "react";
+  
+  export default function BlogPost({ title, topics }) {
+    const navigate = useNavigate();
+  
     const handleChange = (event) => {
-      // handle the selected value change here
+      const topicIndex = event.target.value;
+      navigate(`/forum/${topicIndex}`);
     };
   
     return (
@@ -10,8 +42,8 @@ export default function BlogPost({title, topics}) {
         <div className="topicsList">
           <p>Topics covered this week: </p>
           <select onChange={handleChange}>
-            {topics.map((topic, id) => (
-              <option key={id} value={topic}>
+            {topics.map((topic, index) => (
+              <option key={index} value={index}>
                 {topic}
               </option>
             ))}
@@ -20,4 +52,5 @@ export default function BlogPost({title, topics}) {
       </div>
     );
   };
+  
   
