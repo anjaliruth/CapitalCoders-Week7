@@ -12,7 +12,6 @@ function App() {
     <Routes>
       <Route path = "/" element = {<Grid data = {weekGrid} />}/>
       <Route path = "/forums/:id" element = {<Forum data = {weekGrid}/>}/>
-      <Route path="/forum/:topicIndex" component={Forum} />
       <Route/>
     </Routes>
     </div>

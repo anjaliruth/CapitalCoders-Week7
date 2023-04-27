@@ -7,27 +7,34 @@ import "./index.css";
 import {useParams} from "react-router-dom";
 
 function Forum({data}) {
-  //created comments array
-  const  {id} = useParams()
+  const {id} = useParams();
   const [comments, setComments] = useState(data[id-1].pretext);
+
   return (
     <div>
+      <BlogPost 
+        title={`Week ${id}`} 
+        topics={data[id-1].topics} 
+        arrayid={data[id-1].id} 
+        data={data}
+      />
 
-  <BlogPost title= {`Week ${id}`} topics={data[id-1].topics} />
+      <Routes>
+        {data[id-1].topics.map((topic, index) => (
+          <Route 
+            key={index} 
+            path={`/forums/${id}/${index}`} 
+            element={<CommentList comments={comments} data={data} />}
+          />
+        ))}
+      </Routes>
 
-  {/* call commentList and pass it the props of comments array  */}
-  <Routes>
-  {/* path needs to change to /forums/:id/{topic} */}
-      <Route path = "/" element = {<CommentList comments={comments} />}/>
-      <Route path = "/:topic" element = {<CommentList comments={comments} />}/>
-  {/* <CommentForm comments={comments} setComments={setComments}/> */}
-  </Routes>
-  </div>
-  )
+      <CommentForm comments={comments} setComments={setComments} />
+    </div>
+  );
 }
 
-export default Forum;
-
+export default Forum
 /*
     <Routes>
       <Route path = "/" element = {<Grid data = {weekGrid} />}/>
