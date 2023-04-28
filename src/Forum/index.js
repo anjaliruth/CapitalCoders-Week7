@@ -14,8 +14,6 @@ function Forum({ data }) {
     <div>
       <BlogPost title={`Week ${id}`} topics={data[id - 1].topics} data={data}/>
 
-      {/* call commentList and pass it the props of comments array  */}
-
       <Routes>
         <Route
           path="/forums/:id/:topic"
