@@ -17,7 +17,7 @@ function App() {
     <Routes>
       <Route path = "/" element = {<Login/>}/>
       <Route path = "/grid" element = {<Grid data = {weekGrid} />}/>
-      <Route path = "/forums/:id" element = {<Forum data = {weekGrid}/>}/>
+      <Route path = "/forums/:id/" element = {<Forum data = {weekGrid}/>}/>
       <Route/>
     </Routes>
     </div>
