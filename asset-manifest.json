@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/%7Byour-repository-name%7D/static/css/main.9385e9ba.css",
-    "main.js": "/%7Byour-repository-name%7D/static/js/main.0790688e.js",
-    "static/js/787.d3befce1.chunk.js": "/%7Byour-repository-name%7D/static/js/787.d3befce1.chunk.js",
-    "static/media/logo.svg": "/%7Byour-repository-name%7D/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/%7Byour-repository-name%7D/index.html",
-    "main.9385e9ba.css.map": "/%7Byour-repository-name%7D/static/css/main.9385e9ba.css.map",
-    "main.0790688e.js.map": "/%7Byour-repository-name%7D/static/js/main.0790688e.js.map",
-    "787.d3befce1.chunk.js.map": "/%7Byour-repository-name%7D/static/js/787.d3befce1.chunk.js.map"
+    "main.css": "/CapitalCoders-Week7/static/css/main.9385e9ba.css",
+    "main.js": "/CapitalCoders-Week7/static/js/main.040e543a.js",
+    "static/js/787.d3befce1.chunk.js": "/CapitalCoders-Week7/static/js/787.d3befce1.chunk.js",
+    "static/media/logo.svg": "/CapitalCoders-Week7/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/CapitalCoders-Week7/index.html",
+    "main.9385e9ba.css.map": "/CapitalCoders-Week7/static/css/main.9385e9ba.css.map",
+    "main.040e543a.js.map": "/CapitalCoders-Week7/static/js/main.040e543a.js.map",
+    "787.d3befce1.chunk.js.map": "/CapitalCoders-Week7/static/js/787.d3befce1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9385e9ba.css",
-    "static/js/main.0790688e.js"
+    "static/js/main.040e543a.js"
   ]
 }
